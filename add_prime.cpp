@@ -17,6 +17,14 @@ int main(){
 	cout << "Enter the number to check whether it is a prime or not:";
 	cin >> n;
 	int j =0;
+	
+	if(n==1 || n==0){
+			cout << "Sorry! Please enter the value greater than 1";
+      	}
+    
+    else{
+	
+	
 	int checkprime(int n);
 	
 	for (int i=2; i<=n/2; i++){
@@ -39,14 +47,12 @@ int main(){
 	
 	return 0;
 }
+}
 	
  int checkprime(int n){
 	int flag = 1;
-		if(n==1 || n==0){
-			cout << "Sorry! Please enter the value greater than 1";
-		    flag =2;
-      	}
-     	else{
+		
+     	
 	
      	for (int i=2;i<=n/2;i++){
 	    	if(n%i==0){
@@ -54,7 +60,7 @@ int main(){
 			break;
 		   } 
          }
-      }
+      
       
       return flag;
     }
